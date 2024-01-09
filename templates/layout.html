@@ -1,0 +1,40 @@
+<!doctype html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static "favicon.ico" %}">
+</head>
+<body>
+    <header class="container">
+        <img src='/pictures/cut.png'>
+        <a href="{% url 'home' %}"><span class="logo">Будем сокращать!</span></a>
+        <nav>
+            <a href="{% url 'home' %}">Главная</a>
+            <a href="{% url 'about' %}">Про нас</a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'profile' %}">Личный кабинет</a>
+            <a href="{% url 'link' %}">Ссылки</a>
+            {% else %}
+            <a href="{% url 'user' %}">Войти</a>
+            <a href="{% url 'reg' %}">Регистрация</a>
+            {% endif %}
+        </nav>
+    </header>
+    {% block main %}
+    {% endblock %}
+    <footer class="container-fluid">
+        <span>Все права защищены &copy</span>
+        <nav>
+            <a href="https://vk.com/"><img src='/pictures/vkontakte.png'></a>
+            <a href="https://www.facebook.com/"><img src='/pictures/facebook.png'></a>
+            <a href="https://www.instagram.com/"><img src='/pictures/instagram.png'></a>
+            <a href="https://www.tiktok.com/"><img src='/pictures/tiktok.png'></a>
+    </footer>
+</body>
+</html>

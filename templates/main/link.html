@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+<div class="form-section container links">
+    <h2>Создание ссылок</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Создать ссылку</button>
+    </form>
+</div>
+    <div class="form-section container links output">
+        <h2>Доступные ссылки</h2><br>
+        {% for el in links %}
+            <div id='link'>
+                <h3>Ссылка - <a href="{{ el.long_link }}">/link/{{ el.short_link }}/</a></h3><br>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

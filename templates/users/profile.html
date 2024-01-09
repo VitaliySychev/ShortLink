@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+<div class="form-section container profile">
+    <h1>Кабинет пользователя</h1><br><br>
+    <img width="64" height="64" src="{{ user.profile.img.url }}">
+    <p><strong>@{{ user.username }}</strong></p>
+    <p><b>Email: </b>{{ user.email }}</p>
+    <a href="{% url 'exit' %}"><button>Выйти из кабинета</button></a>
+</div>
+<div class="form-section container update">
+    <form method="POST" enctype="multipart/form-data">
+        <h2>Изменить данные пользователя</h2>
+        {% csrf_token %}
+        {{ updateUserForm.as_p }}
+        {{ profileForm.as_p }}
+        <button class="btn btn-outline-warning" type="submit" id="refresh-button">Обновить</button>
+    </form>
+</div>
+{% endblock main %}

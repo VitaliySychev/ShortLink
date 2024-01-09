@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: floralwhite;
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    color: #099a69;
+    text-decoration: none;
+    transition: color 300ms ease;
+}
+
+a:hover {
+    color: #3ed5a1;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 25px;
+    color: #099a69;
+    margin-right: 700px;
+}
+
+header nav a {margin-left: 20px;}
+
+footer nav a {margin: 0px;}
+
+footer.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    background: bisque;
+}
+
+footer span {margin-left: 20px;}
+
+footer img {
+    height: 35px;
+    margin: 0;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+.container.main {
+    text-align: center;
+    align-items: center;
+    margin-top: 350px;
+    margin-bottom: 350px;
+}
+
+.container.main h1 {
+    font-size: 100px;
+    font-family: 'Pacifico', cursive;
+}
+
+.container.main h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.container.main button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    background: #099a69;
+    color: bisque;
+    transition: transform 500ms ease;
+}
+
+.container.main button:hover {
+    background: bisque;
+    color: #099a69;
+    transform: scale(1.2);
+}
+
+.container.about {
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+.container.about h2 {
+    font-size: 100px;
+    font-family: 'Pacifico', cursive;
+}
+
+.container.about h3 {
+    margin-bottom: 80px;
+}
+
+.form-section {
+    box-sizing: border-box;
+    width: 25%;
+    margin-left: auto;
+    padding: 40px 30px;
+    margin-top: 100px;
+    margin-bottom: 450px;
+}
+
+form label {
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+form .helptext {
+    font-size: 13px;
+    display: block;
+    color: #5e5e5e;
+}
+
+form input, form textarea {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 300px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.form-section button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    background: #099a69;
+    color: bisque;
+    transition: transform 500ms ease;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    transform: scale(1.2);
+    background: bisque;
+    color: #099a69;
+}
+
+hr {margin: 10px 0;}
+
+#refresh-button {margin-top: 20px;}
+
+.form-section textarea {
+    margin-top: 10px;
+ }
+
+.form-section.container.comments {
+    margin-top: 100px;
+}
+
+.form-section.container.comments .users_comments {
+    margin: 20px 0;
+    padding: 20px 25px;
+    background: #d6c07e;
+    font-weight: normal;
+}
+
+.form-section.container.comments textarea {
+    margin-top: 20px;
+    width: 98%;
+ }
+
+.form-section.container.profile {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.form-section.container.profile a,
+.container.main a {
+    background: #099a69;
+    color: bisque;
+}
+
+.form-section.container.profile a:hover,
+.container.main a:hover {
+    background: bisque;
+    color: #099a69;
+}
+
+.form-section.container.update h2 {
+    text-align: center;
+}
+
+.form-section.container.update {
+    margin-top: 0;
+}
+
+.form-section.container input {
+    background: white;
+}
+
+.form-section.container.links {
+    margin-bottom: 150px;
+}
+
+#link a {
+    color: red;
+    cursor: pointer;
+}
+
+#link a:hover {
+    color: cornflowerblue;
+}
+
+#link h3 {
+    font-weight: lighter;
+}
+
+#id_username_helptext {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-section.container li {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-section.container.reg {
+    margin-bottom: 150px;
+}
+
+.form-section.container.user {
+    margin-bottom: 370px;
+}
